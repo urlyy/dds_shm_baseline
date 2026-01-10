@@ -80,3 +80,7 @@ cd /path/to/cyclonedds/examples/helloworld/build
 cd /path/to/cyclonedds/examples/helloworld/build
 ./HelloworldSubscriber
 ```
+
+这里也会出现`使用了共享内存`类似的日志。但其实好像还是走的socket。
+
+可以试下`examples/loan`这个例子，输出略有不一样。
