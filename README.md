@@ -38,7 +38,7 @@ cd cyclonedds
 # 注意修改最后面的路径
 cmake -Bbuild -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install -DENABLE_ICEORYX=On -DBUILD_EXAMPLES=On -DCMAKE_PREFIX_PATH=/path/to/iceoryx/install/
 
-sudo cmake --build build --config Release --target install
+cmake --build build --config Release --target install
 ```
 
 # 二、配置文件
