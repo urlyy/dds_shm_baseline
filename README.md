@@ -84,3 +84,4 @@ cd /path/to/cyclonedds/examples/helloworld/build
 这里也会出现`使用了共享内存`类似的日志。但其实好像还是走的socket读取。
 
 可以试下`examples/loan`这个例子，输出略有不一样，走了共享内存读取，但是资源回收好像有问题。
+最新：发现原因了，因为`message:char *`这个非固定大小的数据，共享内存好像不太支持。
